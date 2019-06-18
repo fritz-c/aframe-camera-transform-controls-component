@@ -15,8 +15,8 @@ A Camera Transform Controls component for [A-Frame](https://aframe.io).
 | ----------- | --------------------------------------------------------- | ------------- |
 | enabled     |                                                           | true          |
 | cameraRigId | Camera rig containing the camera and both controllers     | cameraRig     |
-| onStart     | Event used to start the panning or scale & rotate         | triggerdown   |
-| onEnd       | Event used to stop panning or scale & rotate              | triggerup     |
+| onStart     | Event used to start the panning or scale & rotate         | gripdown      |
+| onEnd       | Event used to stop panning or scale & rotate              | gripup        |
 | showHint    | Show a line between both controllers and the scale factor | true          |
 
 ### Installation

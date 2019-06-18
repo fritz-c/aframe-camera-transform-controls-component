@@ -11,14 +11,13 @@ A Camera Transform Controls component for [A-Frame](https://aframe.io).
 
 ### API
 
-| Property | Description | Default Value |
-| -------- | ----------- | ------------- |
-| enabled         |             | true              |
-| cameraRigId         | Camera rig containing the camera and both controllers            | cameraRig               |
-| onStart         | Event used to start the panning or scale & rotate              | triggerdown              |
-| onEnd         | Event used to stop panning or scale & rotate            | triggerup |
-| showHint         | Show a line between both controllers and the scale factor    | true              |
-
+| Property    | Description                                               | Default Value |
+| ----------- | --------------------------------------------------------- | ------------- |
+| enabled     |                                                           | true          |
+| cameraRigId | Camera rig containing the camera and both controllers     | cameraRig     |
+| onStart     | Event used to start the panning or scale & rotate         | triggerdown   |
+| onEnd       | Event used to stop panning or scale & rotate              | triggerup     |
+| showHint    | Show a line between both controllers and the scale factor | true          |
 
 ### Installation
 
@@ -34,8 +33,7 @@ Install and use by directly including the [browser files](dist):
 </head>
 
 <body>
-  <a-scene camera-transform-controls="">
-  </a-scene>
+  <a-scene camera-transform-controls=""> </a-scene>
 </body>
 ```
 

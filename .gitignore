@@ -1,6 +1,7 @@
 .DS_Store
 .sw[ponm]
-examples/build.js
+/examples/build.js
 gh-pages
+/dist
 node_modules/
 npm-debug.log

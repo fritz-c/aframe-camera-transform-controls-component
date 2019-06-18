@@ -1,4 +1,4 @@
-/* global AFRAME */
+/* global AFRAME,THREE */
 
 if (typeof AFRAME === 'undefined') {
   throw new Error(
@@ -196,13 +196,9 @@ AFRAME.registerComponent('camera-transform-controls', {
   },
 
   onButtonUp: function(evt) {
-    var left;
-    var target;
+    var isLeftHand = evt.target === this.leftHandEl;
 
-    target = evt.target;
-    left = evt.target === this.leftHandEl;
-
-    if (left) {
+    if (isLeftHand) {
       this.panningController = this.controllers.right;
       this.isLeftButtonDown = false;
     } else {

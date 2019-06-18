@@ -2,11 +2,11 @@
   "name": "aframe-camera-transform-controls-component",
   "version": "1.0.0",
   "description": "A Camera Transform Controls component for A-Frame.",
-  "main": "index.js",
+  "main": "dist/aframe-camera-transform-controls-component.js",
   "unpkg": "dist/aframe-camera-transform-controls-component.min.js",
   "scripts": {
     "dev": "budo index.js:dist/aframe-camera-transform-controls-component.min.js --port 7000 --live --open",
-    "dist": "webpack index.js dist/aframe-camera-transform-controls-component.js && webpack -p index.js dist/aframe-camera-transform-controls-component.min.js",
+    "dist": "webpack --mode=none index.js -o dist/aframe-camera-transform-controls-component.js && webpack -p index.js -o dist/aframe-camera-transform-controls-component.min.js",
     "prepublish": "npm run dist",
     "start": "npm run dev",
     "test": "exit 0"
